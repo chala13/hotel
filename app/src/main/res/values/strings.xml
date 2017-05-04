@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GOLDEN TULIP</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="navigation_view_item_1">Acceuil</string>
+
+    <string name="navigation_view_item_2">Photos</string>
+    <string name="navigation_view_item_3">Chambres</string>
+    <string name="navigation_view_item_11">Réunions</string>
+    <string name="navigation_view_item_4">Restaurations</string>
+    <string name="navigation_view_item_5">Emplacement</string>
+    <string name="navigation_view_item_6">Offres</string>
+    <string name="navigation_view_category_1"></string>
+    <string name="title_activity_formulaire">Formulaire</string>
+    <string name="selectdate">Pick time</string>
+
+    <string name="selectdate1">Pick time</string>
+    <string name="country_prompt">Capacité</string>
+
+    <string-array name="country_arrays">
+        <item>Petite (10-50)</item>
+        <item>Moyenne(50-300)</item>
+        <item>Grande(300-800)</item>
+
+    </string-array>
+
+</resources>

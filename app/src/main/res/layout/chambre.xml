@@ -1,0 +1,99 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+
+            android:src="@drawable/logoapp" />
+
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:text="Chambre:"
+                android:textColor="#BFA515"
+                android:textSize="20sp"
+
+                android:layout_below="@+id/image1"/>
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Quand vient le temps de se reposer, d'oublier le monde extérieur jusqu'au jour suivant, nos 243 chambres et 21 suites vous offrent tout le confort pour que des nuits sereines viennent récompenser vos journées bien remplies."
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                android:layout_below="@+id/text" />
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="350dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/relative1"
+            android:background="@drawable/photochambre"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            >
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnreserver"
+                android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemIconTint="#BFA515"
+        app:itemTextColor="#ffffff"
+        app:menu="@menu/navigation_items"
+        android:background="@color/back"/>
+
+</android.support.v4.widget.DrawerLayout>

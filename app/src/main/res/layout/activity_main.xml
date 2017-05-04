@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fitsSystemWindows="true"
+    tools:context=".Splash">
+
+
+    <include layout="@layout/content_main" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logoapp" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/image1"
+
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pager"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:padding="10dip"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative2"
+            android:layout_marginTop="2dp">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/menu1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/menu2"
+                android:layout_toRightOf="@+id/btn1"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/menu3"
+                android:layout_toRightOf="@+id/btn2"/>
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/menu4"
+                android:layout_below="@+id/btn1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/menu5"
+                android:layout_below="@+id/btn2"
+                android:layout_toRightOf="@+id/btn4"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/menu6"
+                android:layout_below="@+id/btn3"
+                android:layout_toRightOf="@+id/btn5"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+        </RelativeLayout>
+</ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,132 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logoapp" />
+            />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Photos:"
+            android:textColor="#BFA515"
+            android:textSize="20sp"
+
+            android:layout_below="@+id/image1"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative1"
+            android:layout_marginTop="200dp">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="150dp"
+                android:layout_height="145dp"
+                android:background="@drawable/ph1"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="150dp"
+                android:layout_height="145dp"
+                android:background="@drawable/ph2"
+                android:layout_toRightOf="@+id/btn1"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="150dp"
+                android:layout_height="145dp"
+                android:background="@drawable/ph3"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/btn2"/>
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="150dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ph4"
+                android:layout_below="@+id/btn2"
+                android:layout_toRightOf="@+id/btn3"
+
+                android:layout_marginRight="5dp" />
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="150dp"
+                android:layout_height="145dp"
+                android:background="@drawable/ph5"
+                android:layout_below="@+id/btn3"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="150dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ph6"
+                android:layout_below="@+id/btn4"
+                android:layout_toRightOf="@+id/btn5"
+                android:layout_marginRight="5dp"/>
+            </RelativeLayout>
+
+        </ScrollView>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemIconTint="#BFA515"
+        app:itemTextColor="#ffffff"
+        app:menu="@menu/navigation_items"
+        android:background="@color/back"/>
+</android.support.v4.widget.DrawerLayout>
